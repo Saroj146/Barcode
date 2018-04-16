@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <form #registerForm="ngForm" (submit)="onSubmit(registerForm, registerForm.value)" ngNativeValidate>
+        <div class="h4 text-center py-4">
+          <p class="h5 text-center">Register</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <input type="radio" id="admin" name="userType" value="ADMIN" checked required ngModel>
+            <label for="admin">ADMIN</label>
+          </div>
+          <div class="col-lg-3">
+            <input type="radio" id="master" name="userType" value="STATIONMASTER" ngModel>
+            <label for="master">STATION-MASTER</label>
+          </div>
+          <div class="col-lg-3">
+            <input type="radio" id="checker" name="userType" value="TICKETCHECKER" ngModel>
+            <label for="checker">TICKET-CHECKER</label>
+          </div>
+        </div>
+        <label for="name" class="font-weight-light">Name</label>
+        <input type="text" id="name" class="form-control" name="name" ngModel required>
+
+        <label for="address" class="font-weight-light">Address</label>
+        <input type="text" id="address" class="form-control" name="address" ngModel required>
+
+        <label for="mobile" class="font-weight-light">Phone Number</label>
+        <input type="number" id="mobile" class="form-control" name="phoneNumber" ngModel required>
+
+        <label for="email" class="font-weight-light">E-mail</label>
+        <input type="email" id="email" class="form-control" name="email" ngModel required>
+
+        <label for="username" class="font-weight-light">Username</label>
+        <input type="text" id="username" class="form-control" name="username" ngModel required>
+
+        <label for="password" class="font-weigth-light">Password</label>
+        <input type="password" id="password" class="form-control" name="password" ngModel required>
+
+        <div class="text-center py-4 mt-3">
+            <button class="btn btn-outline-purple" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

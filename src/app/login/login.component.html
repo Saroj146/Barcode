@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
+			<div class="login-form">
+				<!-- Card -->
+				<div class="card mx-xl-5">
+					<!-- Card body -->
+					<div class="card-body">
+					    <!-- Default form subscription -->
+					    <form #loginForm="ngForm" (submit)="onSubmit(loginForm.value)" ngNativeValidate>
+					        <div class="h4 text-center py-4">
+					        	<p class="login-title">Login</p>
+					        </div>
+					        <!-- Default input name -->
+					        <label for="username" class="font-weight-light">Username</label>
+					        <input type="text" id="username" class="form-control" name="username" ngModel required>
+					        <br>
+					        <!-- Default input email -->
+					        <label for="password" class="font-weight-light">Password</label>
+					        <input type="password" id="password" class="form-control" name="password" ngModel required>
+					        <div class="text-center py-4 mt-3">
+					            <button class="btn btn-outline-purple" type="submit">Login</button>
+					        </div>
+					    </form>
+					    <!-- Default form subscription -->
+					</div>
+					<!-- Card body -->
+				</div>
+				<!-- Card -->
+			</div>
+			<button (click)="logout()">Logout</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+.login-form{
+	height: 500px;
+	width: 500px;
+	margin-top: 60px;
+}
+
+.card{
+	background: linear-gradient(to bottom, #f7fbfc 0%,#d9edf2 40%,#add9e4 100%);
+}
+
+.login-title{
+	margin: auto 100px;
+	height: 50px;
+	box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2); 
+	// background: #add9e4;
+	background: linear-gradient(to top, #add9e4 100%, #f7fbfc 10%,#d9edf2 40%,#add9e4 100%);
+	border-radius: 10px;
+	padding-top: 10px;
+}
